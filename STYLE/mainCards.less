@@ -1,0 +1,30 @@
+.content_card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    .size_movil();
+    padding: @padding_title;
+    border: 1px solid black ;
+    background-color: @prymary;
+    color: @text-prymary;
+
+
+    &_titulo{
+        padding: @padding_title;
+        font-size: 0.9em;
+    };
+
+    &_price{
+        font-size: 2.5em;
+
+    }
+    li{
+        padding: 15px 0;
+        border-top: 1px solid rebeccapurple;
+        border-bottom: 1px solid rebeccapurple;
+
+        list-style: none;
+    }
+}

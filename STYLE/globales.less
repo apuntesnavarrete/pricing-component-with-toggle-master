@@ -2,12 +2,19 @@
 @prymary:  hsl(240, 78%, 98%);
 @text-prymary: hsl(232, 13%, 33%);
 @text-secundary: hsl(233, 13%, 49%);
-@color-fondo:hsl(234, 14%, 74%);
+@color-fondo:hsl(213, 27%, 94%);
 @fuente-prymary: Montserrat; 
+@padding_title: 20px ;
+
 
 .format_style{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
+}
+
+.size_movil{
+    width: 335px
 }
 
 *{
@@ -18,5 +25,11 @@
 body{
     font-size: 15px;
     font-family: @fuente-prymary , sans-serif;
-    background-color: @color-fondo;
+    background-color: @color-fondo ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
 }
