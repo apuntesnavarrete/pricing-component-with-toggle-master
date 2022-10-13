@@ -1,41 +1,4 @@
-//variables
+@import "globales.less" ;
 
-@gradiente: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
-@prymary:  hsl(240, 78%, 98%);
-@text-prymary: hsl(232, 13%, 33%);
-@text-secundary: hsl(233, 13%, 49%);
-@color-fondo:hsl(234, 14%, 74%);
-@fuente-prymary: Montserrat; 
+@import "header.less";
 
-.format_style{
-    margin: 0;
-    padding: 0;
-}
-
-*{
-   .format_style();
-}
-
-
-body{
-    font-size: 15px;
-    font-family: @fuente-prymary , sans-serif;
-    background-color: @color-fondo;
-}
-
-.content_input{
-    padding: 20px;
-    width: 350px;
-    border: 1px solid @text-prymary;
-    h1{
-        .format_style();
-        text-align: center;
-        font-size: 0.9em;
-    }
-    .input__select{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-}
