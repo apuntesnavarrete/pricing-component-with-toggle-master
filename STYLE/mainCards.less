@@ -9,22 +9,30 @@
     border: 1px solid black ;
     background-color: @prymary;
     color: @text-prymary;
+    border-radius: @border-radius;
 
 
     &_titulo{
-        padding: @padding_title;
+        padding: 10px;
         font-size: 0.9em;
     };
 
     &_price{
+        padding: 20px 0;
         font-size: 2.5em;
+        border-bottom: 1px solid fade(@text-secundary, 80%) ;
 
     }
     li{
         padding: 15px 0;
-        border-top: 1px solid rebeccapurple;
-        border-bottom: 1px solid rebeccapurple;
+        border-bottom: 1px solid fade(@text-secundary, 80%) ;
 
         list-style: none;
+    }
+    button{
+        width: 100%;
+        height: 40px;
+        margin: 20px 0;
+        border-radius: @border-radius;
     }
 }
