@@ -1,3 +1,13 @@
+//varibales personales
+
+@base: 16px;
+@model-box_base: @base ;
+@fondo: rgb(220, 224, 231) ;
+@color-ligth: rgb(248, 239, 239) ;
+@color-dark: rgb(148, 147, 147);
+@color-special: rgb(53, 52, 52) ;  
+
+
 @gradiente: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
 @prymary:  hsl(240, 78%, 98%);
 @text-prymary: hsl(232, 13%, 33%);
@@ -14,7 +24,7 @@
 }
 
 .size_movil{
-    width: 335px
+    width: 20.93em
 }
 
 *{
@@ -23,9 +33,9 @@
 
 
 body{
-    font-size: 15px;
+    font-size: @base;
     font-family: @fuente-prymary , sans-serif;
-    background-color: @color-fondo ;
+    background-color: @fondo ;
     display: flex;
     flex-direction: column;
     align-items: center;

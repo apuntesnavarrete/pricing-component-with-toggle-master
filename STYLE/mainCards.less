@@ -5,34 +5,36 @@
 
 .card{
     .size_movil();
-    padding: @padding_title;
-    border: 1px solid black ;
-    background-color: @prymary;
-    color: @text-prymary;
+    padding: @model-box_base * 2 ;
+    background-color: @color-ligth;
+    color: @color-dark;
     border-radius: @border-radius;
-
+    margin:@model-box_base 0 ;
 
     &_titulo{
-        padding: 10px;
         font-size: 0.9em;
-    };
+        margin-bottom: @model-box_base/2;
+    }
 
     &_price{
-        padding: 20px 0;
+        padding: @model-box_base 0;
         font-size: 2.5em;
-        border-bottom: 1px solid fade(@text-secundary, 80%) ;
+        border-bottom: 1px solid fade(@color-dark , 80%) ;
 
     }
     li{
-        padding: 15px 0;
-        border-bottom: 1px solid fade(@text-secundary, 80%) ;
-
+        padding: @model-box_base 0;
+        border-bottom: 1px solid fade(@color-dark , 80%) ;
         list-style: none;
     }
-    button{
+    &__button{
         width: 100%;
-        height: 40px;
-        margin: 20px 0;
+        height: 2.5em;
+        margin-top: @model-box_base*2;
         border-radius: @border-radius;
+        font-size: 1em;
+        border: 0px solid @color-ligth;
+        background-color: @color-special;
+        color: @color-ligth;
     }
 }
