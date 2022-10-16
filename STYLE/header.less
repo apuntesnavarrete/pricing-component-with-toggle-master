@@ -13,3 +13,44 @@
 
     }
 }
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+
+    display: inline-block;
+    cursor: pointer;
+}
+.Toogle___input{
+    display: none;
+}
+.toggle__fill{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: green;
+    transition: background 0.2s;
+}
+
+.Toogle___input:checked ~ .toggle__fill{
+    background: green;
+
+}
+.toggle__fill::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: transform 0.2s ;
+}
+
+.Toogle___input:checked ~ .toggle__fill::after{
+    transform: translateX(20px);
+}
