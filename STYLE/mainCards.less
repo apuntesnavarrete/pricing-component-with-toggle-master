@@ -39,9 +39,13 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
+        transition: @transition;
+
     }
     &__button:hover{
-        filter: brightness(1.2);
+        background-color: @color-ligth;
+        border: 1px solid @color-special;
+        color: @color-special;
     }
 }
 
@@ -58,6 +62,13 @@
     button{
         background-color: @color-fondo;
         color: @color-dark;
+        transition: @transition;
+    }
+    button:hover{
+        background-color: @color-dark;
+        border: 1px solid @color-fondo;
+        color: @color-fondo;
+
     }
   
 }
