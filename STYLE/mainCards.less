@@ -34,23 +34,27 @@
         border-radius: @border-radius;
         font-size: 0.6em;
         border: 0px solid @color-ligth;
-        background-color: @color-special;
+        background-image: linear-gradient(@gradiente_start, @gradiente_finish);
         color: @color-ligth;
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
         transition: @transition;
+        font-weight: 700;
+
 
     }
     &__button:hover{
+        background-image: none;
         background-color: @color-ligth;
-        border: 1px solid @color-special;
-        color: @color-special;
+        border: 1px solid @gradiente_finish;
+        color: @gradiente_finish;
     }
 }
 
 .card--black{
-    background-color: @color-dark;
+    background-image: linear-gradient(@gradiente_start, @gradiente_finish);
+
     color: @color-ligth;
    
     h3{
@@ -60,14 +64,17 @@
         border-bottom: 1px solid fade(@color-ligth , 80%) ;
     }
     button{
-        background-color: @color-fondo;
-        color: @color-dark;
+        background-color: @fondo;
+        color: @gradiente_finish;
         transition: @transition;
+        background-image: none;
+
     }
     button:hover{
-        background-color: @color-dark;
-        border: 1px solid @color-fondo;
-        color: @color-fondo;
+        background-color: none;
+        border: 1px solid @fondo;
+        color: @fondo;
+        background-image: linear-gradient(@gradiente_start, @gradiente_finish);
 
     }
   

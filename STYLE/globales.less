@@ -1,18 +1,17 @@
 //varibales personales
 
-@fondo: rgb(220, 224, 231) ;
-@color-ligth: rgb(239, 248, 246) ;
-@color-dark: rgb(148, 147, 147);
-@color-special: rgb(53, 52, 52) ;  
+@fondo: rgb(236, 238, 243) ;
+@color-ligth: rgb(248, 248, 248) ;
+@color-dark: hsl(232, 13%, 33%);
 @transition: all 0.5s; 
 
-@gradiente: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
-@prymary:  hsl(240, 78%, 98%);
-@text-prymary: hsl(232, 13%, 33%);
-@text-secundary: hsl(233, 13%, 49%);
-@color-fondo:hsl(213, 27%, 94%);
+@gradiente_start: hsl(236, 72%, 79%);
+@gradiente_finish: hsl(237, 63%, 64%);
+
+
+
+
 @fuente-prymary: Montserrat; 
-@padding_title: 20px ;
 @border-radius: 5px ;
 
 
@@ -41,7 +40,7 @@ body{
     text-align: center;
     background-image: url("/images/bg-top.svg") ,url("/images/bg-bottom.svg");
     background-repeat: no-repeat;
-    background-position: right , bottom left;
+    background-position: top right , bottom left;
 
 }
 
@@ -58,7 +57,7 @@ body{
     body{
         font-size: 14px;
         height: 100vh;
-
+        background-position: right , bottom left;
  }
   }
 
