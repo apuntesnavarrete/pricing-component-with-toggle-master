@@ -1,12 +1,9 @@
 //varibales personales
 
-@base: 16px;
-@model-box_base: @base ;
 @fondo: rgb(220, 224, 231) ;
 @color-ligth: rgb(239, 248, 246) ;
 @color-dark: rgb(148, 147, 147);
 @color-special: rgb(53, 52, 52) ;  
-
 
 @gradiente: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
 @prymary:  hsl(240, 78%, 98%);
@@ -33,13 +30,47 @@
 
 
 body{
-    font-size: @base;
+    font-size: 16px;
     font-family: @fuente-prymary , sans-serif;
     background-color: @fondo ;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    background-image: url("/images/bg-top.svg") ,url("/images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right , bottom left;
 
 }
+
+@media (min-width: 700px) {
+    
+    body{
+           font-size: 20px;
+ 
+    }
+    
+  }
+
+  @media (min-width: 1000px) {
+    body{
+        font-size: 14px;
+        height: 100vh;
+
+ }
+  }
+
+  
+  @media (min-width: 1400px) {
+    body{
+        font-size: 20px;
+
+ }
+  }
+
+  @media (min-width: 2000px) {
+    body{
+        font-size: 26px;
+
+ }
+  }
