@@ -1,77 +1,65 @@
 //varibales personales
 
-@fondo: rgb(236, 238, 243) ;
-@color-ligth: rgb(248, 248, 248) ;
+@fondo: rgb(236, 238, 243);
+@color-ligth: rgb(248, 248, 248);
 @color-dark: hsl(232, 13%, 33%);
-@transition: all 0.5s; 
+@transition: all 0.5s;
 
 @gradiente_start: hsl(236, 72%, 79%);
 @gradiente_finish: hsl(237, 63%, 64%);
 
+@fuente-prymary: Montserrat;
+@border-radius: 5px;
 
-
-
-@fuente-prymary: Montserrat; 
-@border-radius: 5px ;
-
-
-.format_style{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+.format_style {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.size_movil{
-    width: 19em
+.size_movil {
+  width: 19em;
 }
 
-*{
-   .format_style();
+* {
+  .format_style();
 }
 
-
-body{
-    font-size: 16px;
-    font-family: @fuente-prymary , sans-serif;
-    background-color: @fondo ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-image: url("/images/bg-top.svg") ,url("/images/bg-bottom.svg");
-    background-repeat: no-repeat;
-    background-position: top right , bottom left;
-
+body {
+  font-size: 16px;
+  font-family: @fuente-prymary, sans-serif;
+  background-color: @fondo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("/images/bg-top.svg"), url("/images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
 }
 
 @media (min-width: 700px) {
-    
-    body{
-           font-size: 20px;
- 
-    }
-    
+  body {
+    font-size: 20px;
   }
+}
 
-  @media (min-width: 1000px) {
-    body{
-        font-size: 14px;
-        height: 100vh;
-        background-position: right , bottom left;
- }
+@media (min-width: 1000px) {
+  body {
+    font-size: 14px;
+    height: 100vh;
+    background-position: right, bottom left;
   }
+}
 
-  
-  @media (min-width: 1400px) {
-    body{
-        font-size: 20px;
-
- }
+@media (min-width: 1400px) {
+  body {
+    font-size: 20px;
   }
+}
 
-  @media (min-width: 2000px) {
-    body{
-        font-size: 26px;
-
- }
+@media (min-width: 2000px) {
+  body {
+    font-size: 26px;
   }
+}
